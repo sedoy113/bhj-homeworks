@@ -17,8 +17,8 @@ function fontChange(el) {
 		book.classList.remove('book_fs-small');
 	}
 
-	for (let letter of document.querySelectorAll('.font-size')) {
-		letter.classList.remove('font-size_active');
+	for (let b of document.querySelectorAll('.font-size')) {
+		b.classList.remove('font-size_active');
 	}
 
 	el.target.classList.add('font-size_active');
