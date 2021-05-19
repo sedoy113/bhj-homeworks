@@ -12,8 +12,8 @@ document.getElementById('tasks__add').addEventListener('click', (event) => {
         </div>`);
 		event.preventDefault();
 		document.getElementById('task__input').value = '';
-		document.querySelector('.task__remove').addEventListener('click', () => {
-			document.querySelector('.task__remove').closest('.task').remove();
+		document.querySelector('.task__remove').addEventListener('click', (elem) => {
+			elem.target.closest(`.task`).remove();
 		})
 	}
 	event.preventDefault();
